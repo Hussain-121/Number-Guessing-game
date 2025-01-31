@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff69b4, #ff1493, #ff00ff, #c71585); /* Pinky and purple vibrant gradient */
+    background-size: 400% 400%; /* For smooth gradient transitions */
+    animation: gradientAnimation 10s ease infinite; /* Adds an animation to the gradient */
+    color: #fff; /* Set text color to white for contrast */
+    font-family: "poppins", sans-serif;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    position: absolute;
+    width: 50%;
+    min-width: 580px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.2); /* Increased transparency for better contrast */
+    padding: 50px 10px;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    font-family: "poppins", sans-serif;
+    backdrop-filter: blur(10px); /* Blur effect for a glassy look */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Glowing border */
+    box-shadow: 0px 8px 20px rgba(255, 105, 180, 0.7); /* Adds a pinkish shadow for a neon effect */
+}
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff; /* Change text color to white for better contrast */
+    text-shadow: 2px 2px 8px rgba(255, 105, 180, 1); /* Stronger shadow for better readability */
+}
+input[type="text"] {
+    width: 100px;
+    font-weight: 600;
+    padding: 20px 0;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 2px solid #ff69b4;
+    color: #ffffff; /* Changed input text color to white for better visibility */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    text-shadow: 1px 1px 3px rgba(255, 0, 255, 0.5);
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.5);
+}
+button {
+    width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    background-color: #ff1493;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 10px rgba(255, 0, 255, 0.7); /* Glowing button */
+    transition: transform 0.2s ease-in-out;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 0, 255, 0.9); /* Increased glow on hover */
+}
+p {
+    font-weight: 400;
+    color: #ffffff; /* Ensure paragraph text is bright enough */
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8); /* Add text shadow for better readability */
+}
